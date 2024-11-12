@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="block bg-primary-green">
+      <div class="container mx-auto sm:px-10 md:px-10 lg:px-10 2xl:px-40">
+        <div class="flex justify-between items-center py-3">
+          <img src="assets/images/logo.svg" alt="logo" class="" />
+
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            class="text-gray-600 bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-400 font-medium rounded-full text-xs px-5 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            <img
+              src="assets/images/language-skill.svg"
+              alt="language-skill"
+              class="me-1"
+            />
+            ID
+            <svg
+              class="w-2.5 h-2.5 ms-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-fit dark:bg-gray-700"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 hover:text-gray-600 font-[poppins]dark:text-gray-200"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >Indonesia</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >English</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Jumbotron -->
+    <div
+      class="bg-[url('assets/images/home-banner-mobile.webp')] md:bg-[url('assets/images/home-banner-desktop.webp')] h-[606px] sm:h-[740px] md:h-[400px] lg:h-[540px] 2xl:h-[700px] bg-cover sm:py-[80px] md:py-[60px] lg:py-[70px] mt-8 md:mt-0 relative"
+    >
+      <div class="container mx-auto md:px-10 lg:px-10 2xl:px-40">
+        <div class="flex gap-2 flex-col lg:w-1/2">
+          <h2
+            class="block md:hidden text-center text-orange-primary font-serif font-black text-[22px] lg:text-[38px]"
+          >
+            Fisio Homecare
+          </h2>
+          <h2
+            class="hidden md:block text-left text-orange-primary font-serif font-black text-[22px] lg:text-[38px]"
+          >
+            Fisio Homecare
+          </h2>
+          <h1
+            class="block md:hidden text-center text-dark-green font-serif font-black text-[38px] sm:text-[60px] md:text-[40px] lg:text-[56px] md:leading-[118%]"
+          >
+            Layanan 24/7 <br />
+            <span class="text-orange-primary">Fisioterapi</span><br />
+            di Rumah
+          </h1>
+          <h1
+            class="hidden md:block text-left text-dark-green font-serif font-black text-[38px] sm:text-[60px] md:text-[40px] lg:text-[56px] md:leading-[118%]"
+          >
+            Layanan 24/7 <br />
+            <span class="text-orange-primary">Fisioterapi</span><br />
+            di Rumah
+          </h1>
+        </div>
+
+        <button
+          type="button"
+          class="block md:hidden text-white font-serif font-medium rounded-full text-lg px-5 py-2.5 absolute left-0 right-0 w-10/12 bg-orange-500 hover:bg-orange-600"
+          style="margin-inline: auto; bottom: -20px"
+        >
+          Jadwalkan Sekarang
+        </button>
+
+        <button
+          type="button"
+          class="hidden md:block text-white font-serif font-medium rounded-full text-lg px-5 py-2.5 mt-10 w-[268px] bg-orange-500 hover:bg-orange-600"
+        >
+          Jadwalkan Sekarang
+        </button>
+      </div>
+    </div>
+
+    <!-- End Jumbotron -->
+
+    <!-- Quote -->
+    <div class="bg-[#EDF8F6] py-16">
+      <div class="container m-auto md:px-10 lg:px-10 2xl:px-40">
+        <div class="flex flex-col-reverse lg:flex-row">
+          <div
+            class="flex flex-col gap-4 md:gap-8 w-full lg:w-6/12 justify-start"
+          >
+            <img
+              src="assets/images/img-qoute.webp"
+              alt="img-qoute"
+              class="h-full object-cover object-center"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center px-7 lg:px-12 py-9 w-full lg:w-6/12 bg-primary-green"
+          >
+            <h3
+              class="block lg:hidden text-white text-center text-[16px] md:text-[29px] font-serif"
+            >
+              Kami hadir untuk memberikan solusi praktis bagi Anda yang ingin
+              pulih lebih cepat, dengan perawatan yang disesuaikan dengan
+              kondisi fisik Anda, langsung di rumah tanpa harus repot pergi ke
+              klinik
+            </h3>
+
+            <h3
+              class="hidden lg:block text-white text-left text-[16px] md:text-[29px] font-serif"
+            >
+              Kami hadir untuk memberikan solusi praktis bagi Anda yang ingin
+              pulih lebih cepat, dengan perawatan yang disesuaikan dengan
+              kondisi fisik Anda, langsung di rumah tanpa harus repot pergi ke
+              klinik
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+
+    <!-- Pricing -->
+    <!-- Mobile View -->
+    <div
+      class="block lg:hidden pt-16 pb-24 bg-[url('assets/images/bg-pricing.webp')] bg-cover bg-center"
+    >
+      <div class="container mx-auto">
+        <h1
+          class="font-serif text-2xl md:text-4xl font-extrabold text-light-yellow text-center mb-5 md:mb-7"
+        >
+          Pilihan Paket Perawatan Hemat
+        </h1>
+        <h4 class="font-serif text-center text-white w-full mx-auto mb-9">
+          Kami punya beberapa pilihan paket yang bisa disesuaikan dengan
+          kebutuhan Anda:
+        </h4>
+      </div>
+
+      <div
+        id="splide-pricing"
+        class="splide"
+        role="group"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <div class="splide__list flex !h-[480px]">
+            <div class="splide__slide flex px-2 !self-stretch h-[400px]">
+              <div
+                class="flex flex-col gap-5 bg-orange-primary py-4 px-3 lg:py-6 lg:px-4 rounded-[14px] lg:rounded-[20px] w-[268px] self-stretch"
+              >
+                <h5
+                  class="text-white text-[28px] text-center font-serif font-bold"
+                >
+                  Rp. 500.000
+                </h5>
+                <div
+                  class="flex bg-white rounded-[20px] px-5 py-[20px] border-[5px] border-orange-primary self-stretch items-start content-center"
+                >
+                  <div class="flex flex-col gap-6 items-start h-[340px]">
+                    <h4
+                      class="text-orange-primary mx-auto font-bold text-[18px] font-serif text-center"
+                    >
+                      1x Kedatangan
+                    </h4>
+                    <div
+                      class="border border-solid border-[#B3B3B3] w-full"
+                    ></div>
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Konsultasi dan penilaian awal
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Rencana perawatan yang sesuai dengan kondisi Anda
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Sesi terapi selama 60 menit
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Laporan perkembangan dan saran langkah berikutnya
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide flex px-2 !self-stretch h-[400px]">
+              <div
+                class="flex flex-col gap-5 bg-orange-primary py-4 px-3 lg:py-6 lg:px-4 rounded-[14px] lg:rounded-[20px] w-[268px] self-stretch"
+              >
+                <h5
+                  class="text-white text-[28px] text-center font-serif font-bold"
+                >
+                  Rp. 1.650.000
+                </h5>
+                <div
+                  class="flex bg-white rounded-[20px] px-5 py-[20px] border-[5px] border-orange-primary self-stretch items-start content-center"
+                >
+                  <div class="flex flex-col gap-6 items-start h-[340px]">
+                    <h4
+                      class="text-orange-primary mx-auto font-bold text-[18px] font-serif text-center"
+                    >
+                      3x Kedatangan
+                    </h4>
+                    <div
+                      class="border border-solid border-[#B3B3B3] w-full"
+                    ></div>
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Penilaian lengkap
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Rencana perawatan yang disesuaikan dengan kebutuhan
+                          Anda
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Tiga sesi terapi, masing-masing selama 60 menit
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Pemantauan perkembangan secara rutin
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Penyesuaian perawatan jika diperlukan
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="splide__slide flex px-2 !self-stretch h-[400px]">
+              <div
+                class="flex flex-col gap-5 bg-orange-primary py-4 px-3 lg:py-6 lg:px-4 rounded-[14px] lg:rounded-[20px] w-[268px] self-stretch"
+              >
+                <h5
+                  class="text-white text-[28px] text-center font-serif font-bold"
+                >
+                  Rp. 3.300.000
+                </h5>
+                <div
+                  class="flex bg-white rounded-[20px] px-5 py-[20px] border-[5px] border-orange-primary self-stretch items-start content-center"
+                >
+                  <div class="flex flex-col gap-6 items-start h-[340px]">
+                    <h4
+                      class="text-orange-primary mx-auto font-bold text-[18px] font-serif text-center"
+                    >
+                      6x Kedatangan
+                    </h4>
+                    <div
+                      class="border border-solid border-[#B3B3B3] w-full"
+                    ></div>
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Penilaian menyeluruh dan konsultasi berkala
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Rencana perawatan jangka panjang yang disesuaikan
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Enam sesi terapi, masing-masing selama 60 menit
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Update perkembangan secara berkala
+                        </p>
+                      </div>
+                      <div class="flex flex-row gap-3 items-center">
+                        <img src="assets/images/icon-check.svg" alt="check" />
+                        <p class="text-dark-primary font-serif text-xs">
+                          Evaluasi akhir dan rekomendasi perawatan lanjutan
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop View -->
+    <div
+      class="hidden lg:block pt-16 pb-40 bg-[url('assets/images/bg-pricing.webp')] bg-cover bg-center"
+    >
+      <div class="container m-auto md:px-10 lg:px-10 2xl:px-40">
+        <h1
+          class="font-serif text-2xl md:text-4xl font-extrabold text-light-yellow text-center mb-5 md:mb-7"
+        >
+          Pilihan Paket Perawatan Hemat
+        </h1>
+        <h4
+          class="font-serif md:text-2xl text-center text-white w-8/12 mx-auto mb-9"
+        >
+          Kami punya beberapa pilihan paket yang bisa disesuaikan dengan
+          kebutuhan Anda:
+        </h4>
+        <div
+          class="flex flex-row mx-auto w-full gap-5 h-[500px] justify-center"
+        >
+          <div
+            class="flex flex-col gap-5 bg-orange-primary py-4 px-3 lg:py-6 lg:px-4 rounded-[14px] lg:rounded-[20px] w-4/12 self-stretch"
+          >
+            <h5
+              class="text-white text-[28px] lg:text-[32px] xl:text-[40px] text-center font-serif font-bold"
+            >
+              Rp. 550.000
+            </h5>
+            <div
+              class="flex bg-white rounded-[20px] px-5 py-[20px] border-[5px] border-orange-primary self-stretch items-start content-center"
+            >
+              <div
+                class="flex flex-col gap-6 items-start md:h-[422px] lg:h-[468px] xl:h-[414px]"
+              >
+                <h4
+                  class="text-orange-primary mx-auto font-bold text-[26px] font-serif"
+                >
+                  1x Kedatangan
+                </h4>
+                <div class="border border-solid border-[#B3B3B3] w-full"></div>
+                <div class="flex flex-col gap-4">
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Konsultasi dan penilaian awal
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Rencana perawatan yang sesuai dengan kondisi Anda
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Sesi terapi selama 60 menit
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Laporan perkembangan dan saran langkah berikutnya
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-5 bg-orange-primary py-4 px-3 lg:py-6 lg:px-4 rounded-[14px] lg:rounded-[20px] w-4/12 self-stretch"
+          >
+            <h5
+              class="text-white text-[28px] lg:text-[32px] xl:text-[40px] text-center font-serif font-bold"
+            >
+              Rp. 1.650.000
+            </h5>
+            <div
+              class="flex bg-white rounded-[20px] px-5 py-[20px] border-[5px] border-orange-primary self-stretch items-start content-center"
+            >
+              <div
+                class="flex flex-col gap-6 items-start md:h-[422px] lg:h-[468px] xl:h-[414px]"
+              >
+                <h4
+                  class="text-orange-primary mx-auto font-bold text-[26px] font-serif text-center"
+                >
+                  3x Kedatangan
+                </h4>
+                <div class="border border-solid border-[#B3B3B3] w-full"></div>
+                <div class="flex flex-col gap-4">
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Penilaian lengkap
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Rencana perawatan yang disesuaikan dengan kebutuhan Anda
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Tiga sesi terapi, masing-masing selama 60 menit
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Pemantauan perkembangan secara rutin
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Penyesuaian perawatan jika diperlukan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-5 bg-orange-primary py-4 px-3 lg:py-6 lg:px-4 rounded-[14px] lg:rounded-[20px] w-4/12 self-stretch"
+          >
+            <h5
+              class="text-white text-[28px] lg:text-[32px] xl:text-[40px] text-center font-serif font-bold"
+            >
+              Rp. 3.300.000
+            </h5>
+            <div
+              class="flex bg-white rounded-[20px] px-5 py-[20px] border-[5px] border-orange-primary self-stretch items-start content-center"
+            >
+              <div
+                class="flex flex-col gap-6 items-start md:h-[422px] lg:h-[468px] xl:h-[414px]"
+              >
+                <h4
+                  class="text-orange-primary mx-auto font-bold text-[26px] font-serif text-center"
+                >
+                  6x Kedatangan
+                </h4>
+                <div class="border border-solid border-[#B3B3B3] w-full"></div>
+                <div class="flex flex-col gap-4">
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Penilaian menyeluruh dan konsultasi berkala
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Rencana perawatan jangka panjang yang disesuaikan
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Enam sesi terapi, masing-masing selama 60 menit
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Update perkembangan secara berkala
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <img src="assets/images/icon-check.svg" alt="check" />
+                    <p class="text-dark-primary font-serif text-base">
+                      Evaluasi akhir dan rekomendasi perawatan lanjutan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Pricing -->
+
+    <!-- Service -->
+    <div class="bg-white py-16">
+      <div class="container m-auto md:px-10 lg:px-10 2xl:px-40">
+        <h1
+          class="font-serif text-2xl md:text-4xl font-extrabold text-dark-primary text-center mb-5 md:mb-7"
+        >
+          Layanan Kami
+        </h1>
+        <div class="block md:hidden">
+          <div class="flex flex-col items-center gap-6">
+            <div
+              class="flex pt-12 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[60px] w-full border-2 border-primary-green"
+            >
+              <h5
+                class="text-orange-primary text-center font-serif text-xl font-bold"
+              >
+                Terapi Otot dan Sendi
+              </h5>
+              <div
+                class="border border-solid border-prtext-primary-green w-full"
+              ></div>
+              <p class="text-dark-primary font-serif text-base">
+                Untuk masalah sendi, otot, dan tulang.
+              </p>
+              <img
+                src="assets/images/icon-terapi_otot.svg"
+                alt="icon"
+                class="absolute left-0 right-0 w-20 h-20"
+                style="margin-inline: auto; top: -50px"
+              />
+            </div>
+            <div
+              class="flex pt-12 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[60px] w-full border-2 border-primary-green"
+            >
+              <h5
+                class="text-orange-primary text-center font-serif text-xl font-bold"
+              >
+                Rehabilitasi Saraf
+              </h5>
+              <div
+                class="border border-solid border-prtext-primary-green w-full"
+              ></div>
+              <p class="text-dark-primary font-serif text-base text-center">
+                Perawatan khusus untuk kondisi seperti stroke, Parkinson, dll.
+              </p>
+              <img
+                src="assets/images/icon-rehabilitasi_saraf.svg"
+                alt="icon"
+                class="absolute left-0 right-0 w-20 h-20"
+                style="margin-inline: auto; top: -50px"
+              />
+            </div>
+            <div
+              class="flex pt-12 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[60px] w-full border-2 border-primary-green"
+            >
+              <h5
+                class="text-orange-primary text-center font-serif text-xl font-bold"
+              >
+                Perawatan Pasca Operasi
+              </h5>
+              <div
+                class="border border-solid border-prtext-primary-green w-full"
+              ></div>
+              <p class="text-dark-primary font-serif text-base text-center">
+                Membantu pemulihan lebih cepat setelah operasi.
+              </p>
+              <img
+                src="assets/images/icon-perawatan_pascaoperasi.svg"
+                alt="icon"
+                class="absolute left-0 right-0 w-20 h-20"
+                style="margin-inline: auto; top: -50px"
+              />
+            </div>
+            <div
+              class="flex pt-12 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[60px] w-full border-2 border-primary-green"
+            >
+              <h5
+                class="text-orange-primary text-center font-serif text-xl font-bold"
+              >
+                Fisioterapi untuk Lansia
+              </h5>
+              <div
+                class="border border-solid border-prtext-primary-green w-full"
+              ></div>
+              <p class="text-dark-primary font-serif text-base text-center">
+                Perawatan khusus untuk orang tua agar tetap aktif dan
+                meningkatkan kualitas hidup.
+              </p>
+              <img
+                src="assets/images/icon-fisioterapi_lansia.svg"
+                alt="icon"
+                class="absolute left-0 right-0 w-20 h-20"
+                style="margin-inline: auto; top: -50px"
+              />
+            </div>
+            <div
+              class="flex pt-12 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[60px] w-full border-2 border-primary-green"
+            >
+              <h5
+                class="text-orange-primary text-center font-serif text-xl font-bold"
+              >
+                Rehabilitasi Cedera Olahraga
+              </h5>
+              <div
+                class="border border-solid border-prtext-primary-green w-full"
+              ></div>
+              <p class="text-dark-primary font-serif text-base text-center">
+                Mengembalikan performa Anda setelah cedera olahraga.
+              </p>
+              <img
+                src="assets/images/icon-rehabilitasi_cedera.svg"
+                alt="icon"
+                class="absolute left-0 right-0 w-20 h-20"
+                style="margin-inline: auto; top: -50px"
+              />
+            </div>
+            <div
+              class="flex pt-12 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[60px] w-full border-2 border-primary-green"
+            >
+              <h5
+                class="text-orange-primary text-center font-serif text-xl font-bold"
+              >
+                Perawatan Kecelakaan dan Jatuh
+              </h5>
+              <div
+                class="border border-solid border-prtext-primary-green w-full"
+              ></div>
+              <p class="text-dark-primary font-serif text-base text-center">
+                Membangtu mengurangi nyeri dan memulihkan mobilitas pasca
+                kecelakaan.
+              </p>
+              <img
+                src="assets/images/icon-perawatan_kecelakaan.svg"
+                alt="icon"
+                class="absolute left-0 right-0 w-20 h-20"
+                style="margin-inline: auto; top: -50px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="grid grid-cols-2 gap-6">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src="assets/images/icon-terapi_otot.svg"
+                alt="icon-terapi_otot"
+                class="w-[80px] h-[80px] lg:w-[146px] lg:h-[146px]"
+              />
+              <div class="flex flex-col gap-3">
+                <h4
+                  class="block md:hidden font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-center w-fit"
+                >
+                  Terapi Otot dan Sendi
+                </h4>
+                <h4
+                  class="hidden md:block font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-left w-fit"
+                >
+                  Terapi Otot dan Sendi
+                </h4>
+                <p
+                  class="hidden md:block font-serif text-dark-primary text-sm md:text-lg"
+                >
+                  Untuk masalah sendi, otot, dan tulang.
+                </p>
+                <button
+                  class="block md:hidden bg-primary-green px-4 py-1.5 text-white font-medium rounded-md text-xs font-serif w-fit mx-auto"
+                  data-tooltip-placement="bottom"
+                  data-tooltip-target="tooltip-terapi-otot-dan-sendi"
+                >
+                  See Detail
+                </button>
+                <div
+                  id="tooltip-terapi-otot-dan-sendi"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-slate-100 rounded-lg shadow-sm opacity-0 tooltip"
+                >
+                  <div class="flex flex-col gap-4">
+                    <h5
+                      class="text-primary-green text-center font-serif text-sm font-bold"
+                    >
+                      Terapi Otot dan Sendi
+                    </h5>
+                    <div
+                      class="divide-primary-green divide-solid border w-full"
+                    ></div>
+                    <p class="text-dark-primary font-serif text-xs">
+                      Untuk masalah sendi, otot, dan tulang.
+                    </p>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src="assets/images/icon-rehabilitasi_saraf.svg"
+                alt="icon-terapi_otot"
+                class="w-[80px] h-[80px] lg:w-[146px] lg:h-[146px]"
+              />
+              <div class="flex flex-col gap-3">
+                <h4
+                  class="block md:hidden font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-center w-fit"
+                >
+                  Rehabilitasi Saraf
+                </h4>
+                <h4
+                  class="hidden md:block font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-left w-fit"
+                >
+                  Rehabilitasi Saraf
+                </h4>
+                <p
+                  class="hidden md:block font-serif text-dark-primary text-sm md:text-lg"
+                >
+                  Perawatan khusus untuk kondisi seperti stroke, Parkinson, dll.
+                </p>
+                <button
+                  class="block md:hidden bg-primary-green px-4 py-1.5 text-white font-medium rounded-md text-xs font-serif w-fit mx-auto"
+                  data-tooltip-placement="bottom"
+                  data-tooltip-target="tooltip-rehabilitasi-saraf"
+                >
+                  See Detail
+                </button>
+                <div
+                  id="tooltip-rehabilitasi-saraf"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-slate-100 rounded-lg shadow-sm opacity-0 tooltip"
+                >
+                  <div class="flex flex-col gap-4">
+                    <h5
+                      class="text-primary-green text-center font-serif text-sm font-bold"
+                    >
+                      Rehabilitasi Saraf
+                    </h5>
+                    <div
+                      class="divide-primary-green divide-solid border w-full"
+                    ></div>
+                    <p class="text-dark-primary font-serif text-xs">
+                      Perawatan khusus untuk kondisi seperti stroke, Parkinson,
+                      dll.
+                    </p>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src="assets/images/icon-perawatan_pascaoperasi.svg"
+                alt="icon-terapi_otot"
+                class="w-[80px] h-[80px] lg:w-[146px] lg:h-[146px]"
+              />
+              <div class="flex flex-col gap-3">
+                <h4
+                  class="block md:hidden font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-center w-fit"
+                >
+                  Perawatan Pasca Operasi
+                </h4>
+                <h4
+                  class="hidden md:block font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-left w-fit"
+                >
+                  Perawatan Pasca Operasi
+                </h4>
+                <p
+                  class="hidden md:block font-serif text-dark-primary text-sm md:text-lg"
+                >
+                  Membantu pemulihan lebih cepat setelah operasi.
+                </p>
+                <button
+                  class="block md:hidden bg-primary-green px-4 py-1.5 text-white font-medium rounded-md text-xs font-serif w-fit mx-auto"
+                  data-tooltip-placement="bottom"
+                  data-tooltip-target="tooltip-perawatan-pascaoperasi"
+                >
+                  See Detail
+                </button>
+                <div
+                  id="tooltip-perawatan-pascaoperasi"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-slate-100 rounded-lg shadow-sm opacity-0 tooltip"
+                >
+                  <div class="flex flex-col gap-4">
+                    <h5
+                      class="text-primary-green text-center font-serif text-sm font-bold"
+                    >
+                      Perawatan Pasca Operasi
+                    </h5>
+                    <div
+                      class="divide-primary-green divide-solid border w-full"
+                    ></div>
+                    <p class="text-dark-primary font-serif text-xs">
+                      Membantu pemulihan lebih cepat setelah operasi.
+                    </p>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src="assets/images/icon-fisioterapi_lansia.svg"
+                alt="icon-terapi_otot"
+                class="w-[80px] h-[80px] lg:w-[146px] lg:h-[146px]"
+              />
+              <div class="flex flex-col gap-3">
+                <h4
+                  class="block md:hidden font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-center w-fit"
+                >
+                  Fisioterapi untuk Lansia
+                </h4>
+                <h4
+                  class="hidden md:block font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-left w-fit"
+                >
+                  Fisioterapi untuk Lansia
+                </h4>
+                <p
+                  class="hidden md:block font-serif text-dark-primary text-sm md:text-lg"
+                >
+                  Mengembalikan performa Anda setelah cedera olahraga.
+                </p>
+                <button
+                  class="block md:hidden bg-primary-green px-4 py-1.5 text-white font-medium rounded-md text-xs font-serif w-fit mx-auto"
+                  data-tooltip-placement="bottom"
+                  data-tooltip-target="tooltip-fisioterapi-lansia"
+                >
+                  See Detail
+                </button>
+                <div
+                  id="tooltip-fisioterapi-lansia"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-slate-100 rounded-lg shadow-sm opacity-0 tooltip"
+                >
+                  <div class="flex flex-col gap-4">
+                    <h5
+                      class="text-primary-green text-center font-serif text-sm font-bold"
+                    >
+                      Fisioterapi untuk Lansia
+                    </h5>
+                    <div
+                      class="divide-primary-green divide-solid border w-full"
+                    ></div>
+                    <p class="text-dark-primary font-serif text-xs">
+                      Perawatan khusus untuk orang tua agar tetap aktif dan
+                      meningkatkan kualitas hidup.
+                    </p>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src="assets/images/icon-rehabilitasi_cedera.svg"
+                alt="icon-terapi_otot"
+                class="w-[80px] h-[80px] lg:w-[146px] lg:h-[146px]"
+              />
+              <div class="flex flex-col gap-3">
+                <h4
+                  class="block md:hidden font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-center w-fit"
+                >
+                  Rehabilitasi Cedera Olahraga
+                </h4>
+                <h4
+                  class="hidden md:block font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-left w-fit"
+                >
+                  Rehabilitasi Cedera Olahraga
+                </h4>
+                <p
+                  class="hidden md:block font-serif text-dark-primary text-sm md:text-lg"
+                >
+                  Mengembalikan performa Anda setelah cedera olahraga.
+                </p>
+                <button
+                  class="block md:hidden bg-primary-green px-4 py-1.5 text-white font-medium rounded-md text-xs font-serif w-fit mx-auto"
+                  data-tooltip-placement="bottom"
+                  data-tooltip-target="tooltip-rehabilitasi-cedera"
+                >
+                  See Detail
+                </button>
+                <div
+                  id="tooltip-rehabilitasi-cedera"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-slate-100 rounded-lg shadow-sm opacity-0 tooltip"
+                >
+                  <div class="flex flex-col gap-4">
+                    <h5
+                      class="text-primary-green text-center font-serif text-sm font-bold"
+                    >
+                      Rehabilitasi Cedera Olahraga
+                    </h5>
+                    <div
+                      class="divide-primary-green divide-solid border w-full"
+                    ></div>
+                    <p class="text-dark-primary font-serif text-xs">
+                      Mengembalikan performa Anda setelah cedera olahraga.
+                    </p>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src="assets/images/icon-perawatan_kecelakaan.svg"
+                alt="icon-terapi_otot"
+                class="w-[80px] h-[80px] lg:w-[146px] lg:h-[146px]"
+              />
+              <div class="flex flex-col gap-3">
+                <h4
+                  class="block md:hidden font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-center w-fit"
+                >
+                  Perawatan Kecelakaan dan Jatuh
+                </h4>
+                <h4
+                  class="hidden md:block font-serif text-orange-primary text-sm md:text-xl lg:text-2xl font-semibold lg:font-extrabold text-left w-fit"
+                >
+                  Perawatan Kecelakaan dan Jatuh
+                </h4>
+                <p
+                  class="hidden md:block font-serif text-dark-primary text-sm md:text-lg"
+                >
+                  Membangtu mengurangi nyeri dan memulihkan mobilitas pasca
+                  kecelakaan.
+                </p>
+                <button
+                  class="block md:hidden bg-primary-green px-4 py-1.5 text-white font-medium rounded-md text-xs font-serif w-fit mx-auto"
+                  data-tooltip-placement="bottom"
+                  data-tooltip-target="tooltip-perawatan-kecelakaan"
+                >
+                  See Detail
+                </button>
+                <div
+                  id="tooltip-perawatan-kecelakaan"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-slate-100 rounded-lg shadow-sm opacity-0 tooltip"
+                >
+                  <div class="flex flex-col gap-4">
+                    <h5
+                      class="text-primary-green text-center font-serif text-sm font-bold"
+                    >
+                      Perawatan Kecelakaan dan Jatuh
+                    </h5>
+                    <div
+                      class="divide-primary-green divide-solid border w-full"
+                    ></div>
+                    <p class="text-dark-primary font-serif text-xs">
+                      Membangtu mengurangi nyeri dan memulihkan mobilitas pasca
+                      kecelakaan.
+                    </p>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Service -->
+
+    <!-- Why Choose Us -->
+    <div class="bg-[url('assets/images/bg-why-choose-us.svg')] py-16">
+      <div class="container m-auto md:px-10 lg:px-10 2xl:px-40">
+        <h1
+          class="font-serif text-2xl md:text-4xl font-extrabold text-primary-green text-center mb-5 md:mb-7"
+        >
+          Kenapa Memilih Kami?
+        </h1>
+        <img
+          src="assets/images/img-why-choose-us-mobile.svg"
+          alt="img-why-choose-us-desktop"
+          class="block md:hidden mx-auto"
+        />
+        <img
+          src="assets/images/img-why-choose-us-desktop.svg"
+          alt="img-why-choose-us-desktop"
+          class="hidden md:block"
+        />
+      </div>
+    </div>
+    <!-- End Why Choose US -->
+
+    <!-- Testimonials -->
+    <div class="block md:hidden py-10 bg-[#EDF8F6] bg-cover bg-center">
+      <h2
+        class="text-dark-primary text-center font-serif text-[28px] font-bold"
+      >
+        Testimonials
+      </h2>
+      <div
+        id="splide-testimonials"
+        class="splide mt-14"
+        role="group"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide px-2 flex">
+              <div
+                class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between"
+              >
+                <p class="text-dark-primary text-center font-serif text-sm">
+                  "Layanan fisioterapi untuk ibu saya sangat membantu. Dia bisa
+                  mendapatkan perawatan tanpa harus ke rumah sakit, dan sekarang
+                  lebih aktif dari sebelumnya."
+                </p>
+                <div class="flex flex-col gap-1 items-center">
+                  <p
+                    class="text-dark-primary text-center font-serif text-lg font-bold"
+                  >
+                    Sari Puspita
+                  </p>
+                  <p class="font-serif text-xs">Anak Pasien</p>
+                </div>
+                <img
+                  src="assets/images/testimonials1.svg"
+                  alt="testimonials"
+                  class="absolute -top-8 w-[66px] h-[66px]"
+                />
+              </div>
+            </li>
+            <li class="splide__slide px-2 flex">
+              <div
+                class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between"
+              >
+                <p class="text-dark-primary text-center font-serif text-sm">
+                  "Saya sangat puas dengan layanan fisioterapi di rumah.
+                  Terapisnya sangat profesional dan membantu saya pulih setelah
+                  jatuh. Sangat merekomendasikan!"
+                </p>
+                <div class="flex flex-col gap-1 items-center">
+                  <p
+                    class="text-dark-primary text-center font-serif text-lg font-bold"
+                  >
+                    Budi Darmawan
+                  </p>
+                  <p class="font-serif text-xs">65 Tahun</p>
+                </div>
+                <img
+                  src="assets/images/testimonials2.svg"
+                  alt="testimonials"
+                  class="absolute -top-8 w-[66px] h-[66px]"
+                />
+              </div>
+            </li>
+            <li class="splide__slide px-2 flex">
+              <div
+                class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between"
+              >
+                <p class="text-dark-primary text-center font-serif text-sm">
+                  "Cedera olahraga saya pulih lebih cepat berkat terapi dari tim
+                  ini. Mereka benar-benar paham cara menangani masalah saya."
+                </p>
+                <div class="flex flex-col gap-1 items-center">
+                  <p
+                    class="text-dark-primary text-center font-serif text-lg font-bold"
+                  >
+                    Rina Kartika
+                  </p>
+                  <p class="font-serif text-xs">Atlet</p>
+                </div>
+                <img
+                  src="assets/images/testimonials3.svg"
+                  alt="testimonials"
+                  class="absolute -top-8 w-[66px] h-[66px]"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden md:block bg-[#EDF8F6]">
+      <div class="container m-auto md:px-10 lg:px-10 2xl:px-40 py-16">
+        <h2
+          class="text-dark-primary text-center font-serif text-[40px] font-bold mb-6"
+        >
+          Testimonials
+        </h2>
+        <div class="inline-flex items-start gap-8">
+          <div
+            class="flex w-full pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between"
+          >
+            <p class="text-dark-primary text-center font-serif text-sm">
+              "Layanan fisioterapi untuk ibu saya sangat membantu. Dia bisa
+              mendapatkan perawatan tanpa harus ke rumah sakit, dan sekarang
+              lebih aktif dari sebelumnya."
+            </p>
+            <div class="flex flex-col gap-1 items-center">
+              <p
+                class="text-dark-primary text-center font-serif text-xl font-bold"
+              >
+                Sari Puspita
+              </p>
+              <p class="font-serif text-base">Anak Pasien</p>
+            </div>
+            <img
+              src="assets/images/testimonials1.svg"
+              alt="testimonials"
+              class="absolute -top-8 w-[66px] h-[66px]"
+            />
+          </div>
+          <div
+            class="flex w-full pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between"
+          >
+            <p class="text-dark-primary text-center font-serif text-sm">
+              "Saya sangat puas dengan layanan fisioterapi di rumah. Terapisnya
+              sangat profesional dan membantu saya pulih setelah jatuh. Sangat
+              merekomendasikan!"
+            </p>
+            <div class="flex flex-col gap-1 items-center">
+              <p
+                class="text-dark-primary text-center font-serif text-xl font-bold"
+              >
+                Budi Darmawan
+              </p>
+              <p class="font-serif text-base">65 Tahun</p>
+            </div>
+            <img
+              src="assets/images/testimonials2.svg"
+              alt="testimonials"
+              class="absolute -top-8 w-[66px] h-[66px]"
+            />
+          </div>
+          <div
+            class="flex w-full pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between"
+          >
+            <p class="text-dark-primary text-center font-serif text-sm">
+              "Cedera olahraga saya pulih lebih cepat berkat terapi dari tim
+              ini. Mereka benar-benar paham cara menangani masalah saya."
+            </p>
+            <div class="flex flex-col gap-1 items-center">
+              <p
+                class="text-dark-primary text-center font-serif text-xl font-bold"
+              >
+                Rina Kartika
+              </p>
+              <p class="font-serif text-base">Atlet</p>
+            </div>
+            <img
+              src="assets/images/testimonials3.svg"
+              alt="testimonials"
+              class="absolute -top-8 w-[66px] h-[66px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Contact -->
+    <div class="py-16 bg-white">
+      <div class="container m-auto md:px-10 lg:px-10 2xl:px-40">
+        <h2
+          class="text-dark-green text-center font-['Noto_Serif'] text-[18px] md:text-[32px] font-bold"
+        >
+          Yuk, Mulai Sesi Fisioterapi Anda!
+        </h2>
+        <div
+          class="flex items-center justify-center gap-2 w-10/12 mt-8 mx-auto"
+        >
+          <button
+            type="button"
+            class="text-white font-sans font-medium rounded-full text-xs md:text-xl px-5 py-2.5 w-full bg-green-400 hover:bg-green-500"
+          >
+            <div class="flex justify-center items-center gap-3">
+              <i class="ph ph-whatsapp-logo text-base md:text-3xl"></i>
+              <p>Whatsapp</p>
+            </div>
+          </button>
+          <button
+            type="button"
+            class="text-white font-sans font-medium rounded-full text-xs md:text-xl px-5 py-2.5 w-full bg-blue-400 hover:bg-blue-500"
+          >
+            <div class="flex justify-center items-center gap-3">
+              <i class="ph ph-telegram-logo text-base md:text-3xl"></i>
+              <p>Telegram</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <div class="py-10 bg-primary-green">
+      <div class="container m-auto">
+        <div class="flex justify-between items-center md:mb-11">
+          <img
+            src="assets/images/logo.svg"
+            alt="logo"
+            class="w-[130px] md:w-[190px] h-auto"
+          />
+          <div class="flex flex-col gap-2">
+            <p class="text-right text-white font-serif text-[10px] md:text-xs">
+              Member of Aliansi <br />Telemedik Indonesia
+            </p>
+            <img
+              src="assets/images/logo-atensi.svg"
+              alt="atensi"
+              class="w-[80px] md:w-[120px] h-auto"
+            />
+          </div>
+        </div>
+
+        <p class="block md:hidden text-white font-serif text-xs my-3">
+          <span class="font-bold">Clinic Cepat Sehat</span> is a clinic
+          registered under the laws of Indonesia with the registration number
+          04102100035090001.
+        </p>
+        <p class="hidden md:block text-white font-serif text-base my-3">
+          <span class="font-bold">Clinic Cepat Sehat</span> is a clinic
+          registered under the laws of Indonesia with the registration number
+          04102100035090001.
+        </p>
+        <div class="flex flex-col gap-3">
+          <p class="block md:hidden text-white font-serif text-xs">
+            Enjoy our homecare service from the comfort of your home. We are
+            also available offline at:
+          </p>
+          <p class="hidden md:block text-white font-serif text-base">
+            Enjoy our homecare service from the comfort of your home. We are
+            also available offline at:
+          </p>
+          <ul class="block md:hidden ps-3.5 list-disc text-white">
+            <li class="font-serif text-xs md:text-sm">
+              <p class="font-bold text-white">Seminyak Address</p>
+              <p>
+                Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Find Out Why Patients Love Us!</a
+                >
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-white">Jimbaran Address</p>
+              <p>
+                Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
+                80361
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Discover Our Patient Stories!</a
+                >
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-white">Sanur Address</p>
+              <p>
+                Jl. Batur Sari No.33, Sanur Kauh, Denpasar Selatan, Kota
+                Denpasar, Bali 80228
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >See Our Patient Experiences!</a
+                >
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-white">Canggu Address</p>
+              <p>
+                Jl. Raya Canggu No.12, Canggu, Kec. Kuta Utara, Kabupaten
+                Badung, Badung, Bali 80351
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Read Our Top Reviews!</a
+                >
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-white">Pererenan Address</p>
+              <p>
+                Jl. Jantuk Angsa Desa No.20, Pererenan, Kec. Mengwi, Kabupaten
+                Badung, Bali 80351
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Explore Our Stellar Ratings!</a
+                >
+              </div>
+            </li>
+            <li class="font-serif text-xs md:text-sm mt-3">
+              <p class="font-bold text-white">Jakarta Address</p>
+              <p>
+                Jl. Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
+                Jakarta Timur, DKI Jakarta 13510
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Check Out Patient Reviews!</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="hidden md:block px-[40px]">
+            <div class="flex gap-11">
+              <ul class="ps-3.5 list-disc text-white">
+                <li class="font-serif text-xs md:text-sm">
+                  <p class="font-bold text-white">Seminyak Address</p>
+                  <p>
+                    Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali
+                    80361
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Find Out Why Patients Love Us!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-white">Jimbaran Address</p>
+                  <p>
+                    Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
+                    80361
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Discover Our Patient Stories!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-white">Sanur Address</p>
+                  <p>
+                    Jl. Batur Sari No.33, Sanur Kauh, Denpasar Selatan, Kota
+                    Denpasar, Bali 80228
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >See Our Patient Experiences!</a
+                    >
+                  </div>
+                </li>
+              </ul>
+              <ul class="ps-3.5 list-disc text-white">
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-white">Canggu Address</p>
+                  <p>
+                    Jl. Raya Canggu No.12, Canggu, Kec. Kuta Utara, Kabupaten
+                    Badung, Badung, Bali 80351
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Read Our Top Reviews!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-white">Pererenan Address</p>
+                  <p>
+                    Jl. Jantuk Angsa Desa No.20, Pererenan, Kec. Mengwi,
+                    Kabupaten Badung, Bali 80351
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Explore Our Stellar Ratings!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-serif text-xs md:text-sm mt-3">
+                  <p class="font-bold text-white">Jakarta Address</p>
+                  <p>
+                    Jl. Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota
+                    Adm. Jakarta Timur, DKI Jakarta 13510
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Check Out Patient Reviews!</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mt-4 md:mt-8">
+          <a href="#" class="flex gap-1 items-center">
+            <i class="ph-fill ph-phone text-white"></i>
+            <p class="text-white font-serif text-xs md:text-xl font-semibold">
+              +62 822-2112-2311
+            </p>
+          </a>
+          <div class="flex gap-1">
+            <a href=""
+              ><img
+                src="assets/images/icon-world.svg"
+                alt="icon-world"
+                class="md:w-9 md:h-9"
+            /></a>
+            <a href=""
+              ><img
+                src="assets/images/icon-facebook.svg"
+                alt="icon-facebook"
+                class="md:w-9 md:h-9"
+            /></a>
+            <a href=""
+              ><img
+                src="assets/images/icon-ig.svg"
+                alt="icon-ig"
+                class="md:w-9 md:h-9"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex bg-white font-sans text-[10px] md:text-base text-dark-primary text-center items-center justify-center py-3 md:py-6"
+    >
+      Copyright © 2024 Fisioterapi Homecare All Rights Reserved.
+    </div>
+    <!-- End Footer -->
+
+    <!-- Floating Botton -->
+    <div
+      class="flex flex-col gap-4"
+      style="position: fixed; bottom: 20px; right: 20px"
+    >
+      <a
+        data-tooltip-target="tooltip-whatsapp"
+        data-tooltip-placement="left"
+        href="#"
+        class="flex p-3 rounded-full w-fit bg-green-400"
+        ><i class="ph ph-whatsapp-logo text-2xl text-white"></i
+      ></a>
+      <div
+        id="tooltip-whatsapp"
+        role="tooltip"
+        class="absolute z-10 invisible flex px-3 py-2 text-sm font-medium text-dark-primary w-fit bg-gray-100 rounded-lg shadow-sm opacity-0 tooltip"
+      >
+        24/7 Chat 👩‍⚕️🚑
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+
+      <a
+        data-tooltip-target="tooltip-telegram"
+        data-tooltip-placement="left"
+        href="#"
+        class="flex p-3 rounded-full w-fit bg-blue-400"
+        ><i class="ph ph-telegram-logo text-2xl text-white"></i
+      ></a>
+      <div
+        id="tooltip-telegram"
+        role="tooltip"
+        class="absolute z-10 invisible flex px-3 py-2 text-sm font-medium text-dark-primary w-fit bg-gray-100 rounded-lg shadow-sm opacity-0 tooltip"
+      >
+        24/7 Chat 👩‍⚕️🚑
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+    <!-- End Floating -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+      var splidePricing = new Splide("#splide-pricing", {
+        type: "loop",
+        focus: "center",
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+      });
+
+      splidePricing.mount();
+
+      var splideTestimonials = new Splide("#splide-testimonials", {
+        type: "loop",
+        focus: "center",
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+      });
+
+      splideTestimonials.mount();
+    </script>
+  </body>
+</html>
